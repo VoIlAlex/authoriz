@@ -1,0 +1,3 @@
+[build-system]
+requires = ['Django==3.2.12', 'python-rapidjson==1.6', 'djangorestframework==3.13.1']
+build-backend = 'setuptools.build_meta:__legacy__'

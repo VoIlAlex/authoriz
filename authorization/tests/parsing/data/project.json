@@ -1,0 +1,31 @@
+[
+  {
+    "model": "rest_api.project",
+    "pk": "fa12f762-0072-4065-a575-3113d4fc37e7",
+    "fields": {
+      "created_at": "2022-02-03T14:29:04.448Z",
+      "updated_at": "2022-02-03T14:29:04.457Z",
+      "name": "string",
+      "owner": "339b42e6-1578-45a8-8058-e60f76252339",
+      "contact_person": "string",
+      "construction_site": "string",
+      "notes": "string"
+    }
+  },
+  {
+    "model": "rest_api.projectaddress",
+    "pk": "70b86c8c-d637-420d-b14b-f41378a5a023",
+    "fields": {
+      "project": "fa12f762-0072-4065-a575-3113d4fc37e7",
+      "address_1": "string",
+      "address_2": "string",
+      "zip": "string",
+      "city": "string",
+      "country": "string",
+      "position": {
+        "lat": 0.0,
+        "lng": 0.0
+      }
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "model": "rest_api.user",
+    "pk": "12c95beb-2e7a-490e-a653-34ae37e9ff14",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$XA6z2wKcTvkpoHwWDZ3ZcI$HDWNCvQgDyduSne9DdxDR1BlZCJ1jcPGUFNxqGDMOIc=",
+      "last_login": "2022-02-02T12:29:51.545Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-02-02T12:29:35.280Z",
+      "email": "ilya.vouk@gmail.com",
+      "phone": "",
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "rest_api.user",
+    "pk": "12c95beb-2e7a-490e-a653-34ae37e9ff15",
+    "fields": {
+      "password": "pbkdf2_sha256$260000$XA6z2wKcTvkpoHwWDZ3ZcI$HDWNCvQgDyduSne9DdxDR1BlZCJ1jcPGUFNxqGDMOIc=",
+      "last_login": "2022-02-02T12:29:51.545Z",
+      "is_superuser": true,
+      "username": "admin2",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-02-02T12:29:35.280Z",
+      "email": "ilya.vouk2@gmail.com",
+      "phone": "",
+      "user_permissions": []
+    }
+  }
+]

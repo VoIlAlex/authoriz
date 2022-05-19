@@ -1,0 +1,22 @@
+[
+  {
+    "model": "rest_api.entity",
+    "pk": "339b42e6-1578-45a8-8058-e60f76252339",
+    "fields": {
+      "name": "123",
+      "entity_type": "smartgarden",
+      "legal_type": "private"
+    }
+  },
+  {
+    "model": "rest_api.userentityrelation",
+    "pk": "fc147708-aa80-49f6-8182-422b31cd0d4b",
+    "fields": {
+      "user": "12c95beb-2e7a-490e-a653-34ae37e9ff14",
+      "entity": "339b42e6-1578-45a8-8058-e60f76252339",
+      "role": "sg_admin",
+      "valid_from": null,
+      "valid_until": null
+    }
+  }
+]
