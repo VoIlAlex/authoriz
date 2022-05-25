@@ -3,3 +3,4 @@ venv/
 .codel/
 *.egg-info/
 dist/
+.idea/
