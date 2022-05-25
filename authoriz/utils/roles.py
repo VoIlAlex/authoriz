@@ -1,5 +1,5 @@
-from authorization.config import ROLE_CLASSES
-from authorization.utils.resolving import resolve_object
+from authoriz.config import ROLE_CLASSES
+from authoriz.utils.resolving import resolve_object
 
 
 def get_all_roles():

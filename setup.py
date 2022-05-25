@@ -1,12 +1,11 @@
 from distutils.core import setup
 import os
 from setuptools import find_packages
-from setuptools.command.install import install
 
 # User-friendly description from README.md
 current_directory = os.path.dirname(os.path.abspath(__file__))
 try:
-    with open(os.path.join(current_directory, 'README.rst'), encoding='utf-8') as f:
+    with open(os.path.join(current_directory, 'README.md'), encoding='utf-8') as f:
         long_description = f.read()
 except Exception:
     long_description = ''
@@ -19,13 +18,13 @@ setup(
     packages=find_packages('.'),
     # Start with a small number and increase it with
     # every change you make https://semver.org
-    version='0.0.2',
+    version='0.0.3',
     # Chose a license from here: https: //
     # help.github.com / articles / licensing - a -
     # repository. For example: MIT
     license='BSD-2',
     # Short description of your library
-    description='Django-based authorization framework.',
+    description='Django rules-based authorization framework.',
     # Long description of your library
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -47,7 +46,7 @@ setup(
     ],
     # https://pypi.org/classifiers/
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Framework :: Django',
         'Framework :: Django :: 3.2',
         'Intended Audience :: Developers',

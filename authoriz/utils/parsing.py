@@ -5,7 +5,7 @@ Supplementary functionality for permissions parsing.
 from typing import List
 from urllib.parse import parse_qs
 
-from authorization.dataclasses import ParsedAction
+from authoriz.dataclasses import ParsedAction
 
 
 def merge_raw_rules_lists(rules_lists: List[List[dict]]) -> List[dict]:

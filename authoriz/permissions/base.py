@@ -4,8 +4,8 @@ Base functionality for DRF permissions classes to work with permissions parsing 
 from django.conf import settings
 from rest_framework.permissions import BasePermission
 
-from authorization.service import PermissionsService
-from authorization.utils.permissions import SkipPermission
+from authoriz.service import PermissionsService
+from authoriz.utils.permissions import SkipPermission
 
 
 class BaseServicePermission(BasePermission):

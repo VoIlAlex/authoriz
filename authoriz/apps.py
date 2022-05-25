@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
-from authorization.cache import clear_cache
-from authorization.parsing.service import RulesParsingService
+from authoriz.cache import clear_cache
+from authoriz.parsing.service import RulesParsingService
 
 
 class AuthorizationConfig(AppConfig):

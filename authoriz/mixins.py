@@ -6,7 +6,7 @@ from collections import OrderedDict
 from typing import Union
 from abc import ABCMeta
 
-from authorization.permissions.base import BaseServicePermission
+from authoriz.permissions.base import BaseServicePermission
 
 
 class APIViewPermissionsMixin(metaclass=ABCMeta):

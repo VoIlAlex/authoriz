@@ -5,8 +5,8 @@ Base functionality for permissions parsing.
 from abc import ABC, abstractmethod
 from typing import List, Tuple
 
-from authorization.namespaces.base import ActionEnumsService
-from authorization.dataclasses import ParsedAction, PermissionsRule
+from authoriz.namespaces.base import ActionEnumsService
+from authoriz.dataclasses import ParsedAction, PermissionsRule
 
 
 class PermissionsParser(ABC):

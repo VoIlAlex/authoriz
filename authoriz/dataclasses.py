@@ -5,7 +5,7 @@ Module specified dataclasses used by authorization module.
 from dataclasses import dataclass, field
 from typing import List
 
-from authorization.namespaces.base import ActionEnumsService
+from authoriz.namespaces.base import ActionEnumsService
 
 NEXT_RULE_ID = 1
 

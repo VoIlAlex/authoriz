@@ -5,12 +5,12 @@ handling parsed rules.
 
 import importlib
 from typing import List
-from django.conf import settings
 
-from authorization.namespaces.base import ActionEnumsService
-from authorization.cache import get_user_allowed_actions_from_cache, save_user_allowed_actions_to_cache
-from authorization.parsing.base import PermissionsParser
-from authorization.utils.parsing import merge_raw_rules_lists
+from authoriz.namespaces.base import ActionEnumsService
+from authoriz.cache import get_user_allowed_actions_from_cache, save_user_allowed_actions_to_cache
+from authoriz.parsing.base import PermissionsParser
+from authoriz.utils.config import get_service_settings
+from authoriz.utils.parsing import merge_raw_rules_lists
 
 
 class RulesParsingService:
@@ -108,7 +108,7 @@ class RulesParsingService:
         """
         Setup rules parsing service (parsers, rules).
         """
-        service_settings = service_settings or getattr(settings, 'ACTION_RULES_SERVICE', {})
+        service_settings = service_settings or get_service_settings()
         if not service_settings.get('DISABLE_PARSING', False):
             cls._setup_parsers(service_settings)
             cls._parse_rules(service_settings)

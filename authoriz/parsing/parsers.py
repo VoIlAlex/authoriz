@@ -6,10 +6,10 @@ import os
 import rapidjson
 from typing import List
 
-from authorization.namespaces.base import ActionEnumsService
-from authorization.parsing.base import PermissionsRule, PermissionsParser
-from authorization.utils.parsing import parse_action
-from authorization.utils.roles import get_all_roles
+from authoriz.namespaces.base import ActionEnumsService
+from authoriz.parsing.base import PermissionsRule, PermissionsParser
+from authoriz.utils.parsing import parse_action
+from authoriz.utils.roles import get_all_roles
 
 
 class RolesRulesFilesParser(PermissionsParser):
