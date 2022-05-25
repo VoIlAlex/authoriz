@@ -85,12 +85,12 @@ class EntityPermissions(ActionsNamespace):
 The parser class has the following structure as the example below:
 
 ```python
-from path.to import get_roles_from_some_source()
+from path.to import get_rules_from_some_source
 from authoriz.parsing.base import PermissionsRule, PermissionsParser
 
 class RulesFromSomeSourceParser(PermissionsParser):
     def get_rules(self) -> List[PermissionsRule]:
-        rules = get_roles_from_some_source()
+        rules = get_rules_from_some_source()
         return rules
 ```
 
