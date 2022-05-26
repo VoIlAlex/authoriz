@@ -2,9 +2,9 @@ from copy import deepcopy
 from dataclasses import dataclass, field
 from typing import List
 
-from authorization.dataclasses import PermissionsRule
-from authorization.parsing.base import PermissionsParser
-from authorization.parsing.service import RulesParsingService
+from authoriz.dataclasses import PermissionsRule
+from authoriz.parsing.base import PermissionsParser
+from authoriz.parsing.service import RulesParsingService
 
 
 class TestPermissionsParser(PermissionsParser):

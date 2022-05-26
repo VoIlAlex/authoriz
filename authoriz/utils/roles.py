@@ -19,7 +19,11 @@ def get_user_roles_by_param(user_id, param_name, param_value):
     for role_class in ROLE_CLASSES:
         roles_by_class = set()
         for getter in [x for x in role_class['getters'] if x['key'] == param_name]:
-            roles_by_getter = set(getter['getter'](user_id, param_value))
+            if isinstance(getter['getter'], str):
+                getter_function = resolve_object(getter['getter'])
+            else:
+                getter_function = getter['getter']
+            roles_by_getter = set(getter_function(user_id, param_value))
             if len(roles_by_class) == 0:
                 roles_by_class = roles_by_getter
             else:
