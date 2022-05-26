@@ -5,7 +5,7 @@ from authoriz.utils.resolving import resolve_object
 def get_all_roles():
     all_roles = []
     for role_class in ROLE_CLASSES:
-        class_descriptor = role_class['class']
+        class_descriptor = role_class['enum']
         if isinstance(class_descriptor, str):
             cls = resolve_object(class_descriptor)
         else:
