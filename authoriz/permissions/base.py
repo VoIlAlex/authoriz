@@ -5,7 +5,7 @@ from django.conf import settings
 from rest_framework.permissions import BasePermission
 
 from authoriz.service import PermissionsService
-from authoriz.utils.permissions import SkipPermission
+from authoriz.utils.permissions import SkipPermission, DenyPermission
 
 
 class BaseServicePermission(BasePermission):
@@ -40,6 +40,8 @@ class BaseServicePermission(BasePermission):
             value = getattr(self, param_attr)(request, view)
             if SkipPermission.check(value):
                 return True
+            if DenyPermission.check(value):
+                return False
             params[param_attr[4:]] = value
 
         user = request.user
